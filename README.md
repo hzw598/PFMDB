@@ -1,5 +1,5 @@
 # PFMDB
-将FMDB封装成面向对象存储框架
+将FMDB封装成面向对象存储框架，类似于JAVA的Hibernate
 
 1、轻量级，使用简单；
 
