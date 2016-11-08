@@ -13,9 +13,21 @@
 		54D6F2891DD1CA5A00501BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D6F2871DD1CA5A00501BE5 /* Main.storyboard */; };
 		54D6F28B1DD1CA5A00501BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D6F28A1DD1CA5A00501BE5 /* Assets.xcassets */; };
 		54D6F28E1DD1CA5A00501BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D6F28C1DD1CA5A00501BE5 /* LaunchScreen.storyboard */; };
+		54D6F2A91DD1CB3A00501BE5 /* NSObject+ClassProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F2971DD1CB3A00501BE5 /* NSObject+ClassProtocol.m */; };
+		54D6F2AA1DD1CB3A00501BE5 /* NSObject+PFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F2991DD1CB3A00501BE5 /* NSObject+PFMDB.m */; };
+		54D6F2AB1DD1CB3A00501BE5 /* PFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F29D1DD1CB3A00501BE5 /* PFMDBManager.m */; };
+		54D6F2AC1DD1CB3A00501BE5 /* PFMDBObjcProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F29F1DD1CB3A00501BE5 /* PFMDBObjcProperty.m */; };
+		54D6F2AD1DD1CB3A00501BE5 /* PFMDBObjcToTableUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F2A11DD1CB3A00501BE5 /* PFMDBObjcToTableUtil.m */; };
+		54D6F2AE1DD1CB3A00501BE5 /* PFMDBQueryCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F2A31DD1CB3A00501BE5 /* PFMDBQueryCondition.m */; };
+		54D6F2AF1DD1CB3A00501BE5 /* PFMDBSqlGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F2A51DD1CB3A00501BE5 /* PFMDBSqlGenerator.m */; };
+		54D6F2B01DD1CB3A00501BE5 /* PFMDBTableProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F2A71DD1CB3A00501BE5 /* PFMDBTableProperty.m */; };
+		54D6F2B51DD1CDB900501BE5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F2B21DD1CDB900501BE5 /* Student.m */; };
+		54D6F2B61DD1CDB900501BE5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D6F2B41DD1CDB900501BE5 /* User.m */; };
+		E1D8FA4532F32DCCAC9CC77F /* libPods-PFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8D5655EC80C6C7AACDB4BD /* libPods-PFMDB.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44B6810CB63B784DDF167ACE /* Pods-PFMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PFMDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-PFMDB/Pods-PFMDB.release.xcconfig"; sourceTree = "<group>"; };
 		54D6F27B1DD1CA5A00501BE5 /* PFMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D6F27F1DD1CA5A00501BE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54D6F2811DD1CA5A00501BE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +38,31 @@
 		54D6F28A1DD1CA5A00501BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54D6F28D1DD1CA5A00501BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54D6F28F1DD1CA5A00501BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D6F2961DD1CB3A00501BE5 /* NSObject+ClassProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ClassProtocol.h"; sourceTree = "<group>"; };
+		54D6F2971DD1CB3A00501BE5 /* NSObject+ClassProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ClassProtocol.m"; sourceTree = "<group>"; };
+		54D6F2981DD1CB3A00501BE5 /* NSObject+PFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PFMDB.h"; sourceTree = "<group>"; };
+		54D6F2991DD1CB3A00501BE5 /* NSObject+PFMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PFMDB.m"; sourceTree = "<group>"; };
+		54D6F29A1DD1CB3A00501BE5 /* PFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMDB.h; sourceTree = "<group>"; };
+		54D6F29B1DD1CB3A00501BE5 /* PFMDBClassProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMDBClassProtocol.h; sourceTree = "<group>"; };
+		54D6F29C1DD1CB3A00501BE5 /* PFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMDBManager.h; sourceTree = "<group>"; };
+		54D6F29D1DD1CB3A00501BE5 /* PFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMDBManager.m; sourceTree = "<group>"; };
+		54D6F29E1DD1CB3A00501BE5 /* PFMDBObjcProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMDBObjcProperty.h; sourceTree = "<group>"; };
+		54D6F29F1DD1CB3A00501BE5 /* PFMDBObjcProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMDBObjcProperty.m; sourceTree = "<group>"; };
+		54D6F2A01DD1CB3A00501BE5 /* PFMDBObjcToTableUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMDBObjcToTableUtil.h; sourceTree = "<group>"; };
+		54D6F2A11DD1CB3A00501BE5 /* PFMDBObjcToTableUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMDBObjcToTableUtil.m; sourceTree = "<group>"; };
+		54D6F2A21DD1CB3A00501BE5 /* PFMDBQueryCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMDBQueryCondition.h; sourceTree = "<group>"; };
+		54D6F2A31DD1CB3A00501BE5 /* PFMDBQueryCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMDBQueryCondition.m; sourceTree = "<group>"; };
+		54D6F2A41DD1CB3A00501BE5 /* PFMDBSqlGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMDBSqlGenerator.h; sourceTree = "<group>"; };
+		54D6F2A51DD1CB3A00501BE5 /* PFMDBSqlGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMDBSqlGenerator.m; sourceTree = "<group>"; };
+		54D6F2A61DD1CB3A00501BE5 /* PFMDBTableProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMDBTableProperty.h; sourceTree = "<group>"; };
+		54D6F2A71DD1CB3A00501BE5 /* PFMDBTableProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMDBTableProperty.m; sourceTree = "<group>"; };
+		54D6F2A81DD1CB3A00501BE5 /* PFMDBTableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMDBTableProtocol.h; sourceTree = "<group>"; };
+		54D6F2B11DD1CDB900501BE5 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		54D6F2B21DD1CDB900501BE5 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		54D6F2B31DD1CDB900501BE5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		54D6F2B41DD1CDB900501BE5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		6A8D5655EC80C6C7AACDB4BD /* libPods-PFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PFMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		781D7AD4C044C0B6EEDBE101 /* Pods-PFMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PFMDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PFMDB/Pods-PFMDB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D8FA4532F32DCCAC9CC77F /* libPods-PFMDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +82,8 @@
 			children = (
 				54D6F27D1DD1CA5A00501BE5 /* PFMDB */,
 				54D6F27C1DD1CA5A00501BE5 /* Products */,
+				66269D542800DDBB6203C52F /* Pods */,
+				6878B26541FEE715B67B8631 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +98,11 @@
 		54D6F27D1DD1CA5A00501BE5 /* PFMDB */ = {
 			isa = PBXGroup;
 			children = (
+				54D6F2B11DD1CDB900501BE5 /* Student.h */,
+				54D6F2B21DD1CDB900501BE5 /* Student.m */,
+				54D6F2B31DD1CDB900501BE5 /* User.h */,
+				54D6F2B41DD1CDB900501BE5 /* User.m */,
+				54D6F2951DD1CB3A00501BE5 /* lib */,
 				54D6F2811DD1CA5A00501BE5 /* AppDelegate.h */,
 				54D6F2821DD1CA5A00501BE5 /* AppDelegate.m */,
 				54D6F2841DD1CA5A00501BE5 /* ViewController.h */,
@@ -79,6 +124,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		54D6F2951DD1CB3A00501BE5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				54D6F2961DD1CB3A00501BE5 /* NSObject+ClassProtocol.h */,
+				54D6F2971DD1CB3A00501BE5 /* NSObject+ClassProtocol.m */,
+				54D6F2981DD1CB3A00501BE5 /* NSObject+PFMDB.h */,
+				54D6F2991DD1CB3A00501BE5 /* NSObject+PFMDB.m */,
+				54D6F29A1DD1CB3A00501BE5 /* PFMDB.h */,
+				54D6F29B1DD1CB3A00501BE5 /* PFMDBClassProtocol.h */,
+				54D6F29C1DD1CB3A00501BE5 /* PFMDBManager.h */,
+				54D6F29D1DD1CB3A00501BE5 /* PFMDBManager.m */,
+				54D6F29E1DD1CB3A00501BE5 /* PFMDBObjcProperty.h */,
+				54D6F29F1DD1CB3A00501BE5 /* PFMDBObjcProperty.m */,
+				54D6F2A01DD1CB3A00501BE5 /* PFMDBObjcToTableUtil.h */,
+				54D6F2A11DD1CB3A00501BE5 /* PFMDBObjcToTableUtil.m */,
+				54D6F2A21DD1CB3A00501BE5 /* PFMDBQueryCondition.h */,
+				54D6F2A31DD1CB3A00501BE5 /* PFMDBQueryCondition.m */,
+				54D6F2A41DD1CB3A00501BE5 /* PFMDBSqlGenerator.h */,
+				54D6F2A51DD1CB3A00501BE5 /* PFMDBSqlGenerator.m */,
+				54D6F2A61DD1CB3A00501BE5 /* PFMDBTableProperty.h */,
+				54D6F2A71DD1CB3A00501BE5 /* PFMDBTableProperty.m */,
+				54D6F2A81DD1CB3A00501BE5 /* PFMDBTableProtocol.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		66269D542800DDBB6203C52F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				781D7AD4C044C0B6EEDBE101 /* Pods-PFMDB.debug.xcconfig */,
+				44B6810CB63B784DDF167ACE /* Pods-PFMDB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6878B26541FEE715B67B8631 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A8D5655EC80C6C7AACDB4BD /* libPods-PFMDB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54D6F2921DD1CA5A00501BE5 /* Build configuration list for PBXNativeTarget "PFMDB" */;
 			buildPhases = (
+				8AF5D1C636DA1727531CD632 /* [CP] Check Pods Manifest.lock */,
 				54D6F2771DD1CA5A00501BE5 /* Sources */,
 				54D6F2781DD1CA5A00501BE5 /* Frameworks */,
 				54D6F2791DD1CA5A00501BE5 /* Resources */,
+				E50DDD72141D70BB6E8BE294 /* [CP] Embed Pods Frameworks */,
+				606FFBC976632154E5B68013 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,14 +236,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		606FFBC976632154E5B68013 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PFMDB/Pods-PFMDB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AF5D1C636DA1727531CD632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E50DDD72141D70BB6E8BE294 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PFMDB/Pods-PFMDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54D6F2771DD1CA5A00501BE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D6F2B61DD1CDB900501BE5 /* User.m in Sources */,
+				54D6F2AA1DD1CB3A00501BE5 /* NSObject+PFMDB.m in Sources */,
+				54D6F2AD1DD1CB3A00501BE5 /* PFMDBObjcToTableUtil.m in Sources */,
+				54D6F2AB1DD1CB3A00501BE5 /* PFMDBManager.m in Sources */,
+				54D6F2B01DD1CB3A00501BE5 /* PFMDBTableProperty.m in Sources */,
 				54D6F2861DD1CA5A00501BE5 /* ViewController.m in Sources */,
+				54D6F2AF1DD1CB3A00501BE5 /* PFMDBSqlGenerator.m in Sources */,
+				54D6F2AE1DD1CB3A00501BE5 /* PFMDBQueryCondition.m in Sources */,
 				54D6F2831DD1CA5A00501BE5 /* AppDelegate.m in Sources */,
+				54D6F2AC1DD1CB3A00501BE5 /* PFMDBObjcProperty.m in Sources */,
+				54D6F2A91DD1CB3A00501BE5 /* NSObject+ClassProtocol.m in Sources */,
 				54D6F2801DD1CA5A00501BE5 /* main.m in Sources */,
+				54D6F2B51DD1CDB900501BE5 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +419,7 @@
 		};
 		54D6F2931DD1CA5A00501BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 781D7AD4C044C0B6EEDBE101 /* Pods-PFMDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PFMDB/Info.plist;
@@ -281,6 +431,7 @@
 		};
 		54D6F2941DD1CA5A00501BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44B6810CB63B784DDF167ACE /* Pods-PFMDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PFMDB/Info.plist;
@@ -309,6 +460,7 @@
 				54D6F2941DD1CA5A00501BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
