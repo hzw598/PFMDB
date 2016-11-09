@@ -15,7 +15,7 @@ ps：本框架由阅读JRDB源码而来。
 
 在Podfile添加
 
-target :[projectName] do
+target :'[projectName]' do
 
 pod 'PFMDB'
 
