@@ -21,7 +21,7 @@
     Student *student = [[Student alloc] init];
     student.incrementId = @1;
     student.ids = 1;
-    student.name = @"Allen";
+    student.name = @"hzw598";
     student.age = 18;
     student.schoolName = @"中华大学";
     student.sex = kUserSexTypeMale;
