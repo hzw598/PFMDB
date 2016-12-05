@@ -31,8 +31,18 @@
     objc_property_t *props = class_copyPropertyList([self class], &count);
     NSMutableArray *array = [NSMutableArray array];
     
+    //过滤系统属性
+    NSArray *filters = @[@"superclass", @"description", @"debugDescription", @"hash"];
+    
     for (int i=0; i<count; i++) {
-        PFMDBObjcProperty *objcProp = [[PFMDBObjcProperty alloc] initWithProperty:props[i]];
+        objc_property_t prop = props[i];
+        //过滤系统属性
+        NSString *key = [NSString stringWithUTF8String:property_getName(prop)];
+        if ([filters containsObject:key]) {
+            continue;
+        }
+        
+        PFMDBObjcProperty *objcProp = [[PFMDBObjcProperty alloc] initWithProperty:prop];
         [array addObject:objcProp];
     }
     
