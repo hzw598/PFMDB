@@ -61,20 +61,22 @@
     
     //声明sql语句
     NSMutableString *sql = [NSMutableString string];
-    if (pkName) {
-        [sql appendFormat:@"create table if not exists %@ (%@ primary key", tableName, pkName];
-    } else {
+    if (!pkName) {
+        //创建主键
         [sql appendFormat:@"create table if not exists %@ (%@ INTEGER primary key autoincrement", tableName, PFMDB_DEFAULT_PRIMARYKEY];
         pkName = [PFMDB_DEFAULT_PRIMARYKEY copy];
     }
     
     //循环遍历字段属性数组并创建sql语句
     [tableProperties enumerateObjectsUsingBlock:^(PFMDBTableProperty *obj, NSUInteger idx, BOOL *stop) {
-        //主键已创建，不需要再添加该字段
+        //自定义主键，创建主键
         if ([obj.name isEqualToString:pkName]) {
-            return;
+            [sql appendFormat:@"create table if not exists %@ (%@ %@ primary key", tableName, obj.name, obj.type];
+        } else {
+            //添加字段
+            [sql appendFormat:@", %@ %@", obj.name, obj.type];
         }
-        [sql appendFormat:@", %@ %@", obj.name, obj.type];
+        
     }];
     
     [sql appendString:@") ;"];
