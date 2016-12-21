@@ -15,8 +15,8 @@
  *
  *  @return 字段全名
  */
-//+ (NSString *)p_customPrimarykey {
-//    return @"ids";
-//}
++ (NSString *)p_customPrimarykey {
+    return @"ids";
+}
 
 @end

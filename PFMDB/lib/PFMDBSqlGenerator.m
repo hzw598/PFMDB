@@ -71,7 +71,8 @@
     [tableProperties enumerateObjectsUsingBlock:^(PFMDBTableProperty *obj, NSUInteger idx, BOOL *stop) {
         //自定义主键，创建主键
         if ([obj.name isEqualToString:pkName]) {
-            [sql appendFormat:@"create table if not exists %@ (%@ %@ primary key", tableName, obj.name, obj.type];
+            NSString *createTableSql = [NSString stringWithFormat:@"create table if not exists %@ (%@ %@ primary key ", tableName, obj.name, obj.type];
+            [sql insertString:createTableSql atIndex:0];
         } else {
             //添加字段
             [sql appendFormat:@", %@ %@", obj.name, obj.type];

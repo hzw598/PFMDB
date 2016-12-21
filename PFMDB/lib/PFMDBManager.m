@@ -240,7 +240,7 @@
     [queue inDatabase:^(FMDatabase *db) {
         flag = [db tableExists:tableName];
         if (!flag) {
-            NSLog(@"pfmdb检测表结构是否存在失败");
+            NSLog(@"pfmdb检测表结构不存在，将自动创建%@表", tableName);
         }
     }];
     return flag;
