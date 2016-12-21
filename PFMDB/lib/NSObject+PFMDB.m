@@ -525,5 +525,32 @@ static const NSString *PFMDB_INCREMENTIDKEY = @"PFMDB_INCREMENTIDKEY";
     return [[PFMDBManager shareInstance] p_dropTableForClazz:clazz];
 }
 
+/**
+ *  根据条件语句查询数据
+ *
+ *  @param conditions 条件语句，如：@"name like ?"、@"name=? or name=? order by incrementId"
+ *  @param argvs      对应条件语句参数值，如：@[@"%hzw%"]、@[@"hzw", @"hzw598"]
+ *
+ *  @return NSArray
+ */
++ (NSArray *)p_queryByConditions:(NSString *)conditions argvs:(NSArray *)argvs {
+    //对象数组
+    NSMutableArray<PFMDBTableProtocol> *objcArray = [NSMutableArray array];
+    //类相关
+    Class clazz = [self class];
+    NSString *pkName = [clazz p_primaryKey];
+    NSArray<PFMDBTableProperty *> *tableProperties = [clazz p_activateProperties];
+    PFMDBSql *sql = [PFMDBSqlGenerator sqlForQueryByConditions:conditions argvs:argvs inClazz:clazz];
+    FMResultSet *rs = [[PFMDBManager shareInstance] p_executeQuery:sql];
+    while ([rs next]) {
+        NSObject<PFMDBTableProtocol> *objc = [self generateToObjectByResultSet:rs pkName:pkName tableProperties:tableProperties];
+        [objcArray addObject:objc];
+    }
+    
+    [rs close];
+    
+    return objcArray;
+}
+
 
 @end

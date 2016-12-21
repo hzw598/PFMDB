@@ -103,4 +103,14 @@
  */
 + (BOOL)p_dropTable;
 
+/**
+ *  根据条件语句查询数据
+ *
+ *  @param conditions   条件语句，如：@"name like ?"、@"name=? or name=?  order by incrementId"
+ *  @param argvs        对应条件语句参数值，如：@[@"%hzw%"]、@[@"hzw", @"hzw598"]
+ *
+ *  @return NSArray
+ */
++ (NSArray *)p_queryByConditions:(NSString *)conditions argvs:(NSArray *)argvs;
+
 @end

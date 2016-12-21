@@ -173,4 +173,17 @@
                               orderBy:(NSString *)orderColumnName
                                isDESC:(BOOL)isDESC;
 
+/**
+ *  根据条件查询数据
+ *
+ *  @param conditions   条件语句
+ *  @param argvs        条件语句对应值
+ *  @param clazz        对应类
+ *
+ *  @return 返回占位符的sql select * from tablename
+ */
++ (PFMDBSql *)sqlForQueryByConditions:(NSString *)conditions
+                                argvs:(NSArray *)argvs
+                              inClazz:(Class<PFMDBTableProtocol>)clazz;
+
 @end
