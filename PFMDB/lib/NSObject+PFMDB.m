@@ -552,5 +552,45 @@ static const NSString *PFMDB_INCREMENTIDKEY = @"PFMDB_INCREMENTIDKEY";
     return objcArray;
 }
 
+/**
+ *  根据sql语句查询数据
+ *
+ *  @param sql   查询语句
+ *
+ *  @return NSArray
+ */
++ (NSArray *)p_queryBySql:(NSString *)sql {
+    //对象数组
+    NSMutableArray<PFMDBTableProtocol> *objcArray = [NSMutableArray array];
+    //类相关
+    Class clazz = [self class];
+    NSString *pkName = [clazz p_primaryKey];
+    NSArray<PFMDBTableProperty *> *tableProperties = [clazz p_activateProperties];
+    //封装查询语句
+    PFMDBSql *pSql = [PFMDBSql sql:sql argvs:nil];
+    FMResultSet *rs = [[PFMDBManager shareInstance] p_executeQuery:pSql];
+    while ([rs next]) {
+        NSObject<PFMDBTableProtocol> *objc = [self generateToObjectByResultSet:rs pkName:pkName tableProperties:tableProperties];
+        [objcArray addObject:objc];
+    }
+    
+    [rs close];
+    
+    return objcArray;
+}
+
+/**
+ *  根据sql语句更新数据
+ *
+ *  @param sql   更新语句
+ *
+ *  @return BOOL
+ */
++ (BOOL)p_updateBySql:(NSString *)sql {
+    //封装查询语句
+    PFMDBSql *pSql = [PFMDBSql sql:sql argvs:nil];
+    return [[PFMDBManager shareInstance] p_executeUpdateOne:pSql];
+}
+
 
 @end

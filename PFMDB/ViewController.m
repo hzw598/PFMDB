@@ -27,10 +27,10 @@
     student.sex = kUserSexTypeMale;
     [student p_save];
     
-    long total = [Student p_queryTotalCount];
-    NSLog(@"total = %ld", total);
+    BOOL flag = [Student p_updateBySql:@"update Student set age=20"];
+    NSLog(@"flag = %d", flag);
     
-    NSArray *students = [Student p_queryByPage:0 pageSize:10];
+    NSArray *students = [Student p_queryBySql:@"select * from Student"];
     NSLog(@"students = %zd", students.count);
     
     if (students.count > 0) {

@@ -113,4 +113,22 @@
  */
 + (NSArray *)p_queryByConditions:(NSString *)conditions argvs:(NSArray *)argvs;
 
+/**
+ *  根据sql语句查询数据
+ *
+ *  @param sql   查询语句
+ *
+ *  @return NSArray
+ */
++ (NSArray *)p_queryBySql:(NSString *)sql;
+
+/**
+ *  根据sql语句更新数据
+ *
+ *  @param sql   更新语句
+ *
+ *  @return BOOL
+ */
++ (BOOL)p_updateBySql:(NSString *)sql;
+
 @end
