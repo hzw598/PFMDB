@@ -74,6 +74,7 @@
         _defaultDatabase = [self databaseWithPath:path];
         [self.databaseArray setObject:_defaultDatabase forKey:path];
     }
+    [_defaultDatabase open];
     return _defaultDatabase;
 }
 
@@ -159,6 +160,8 @@
             [self.databaseArray setObject:db forKey:path];
             [db open];
         }
+    } else {
+        [db open];
     }
     
     return db;

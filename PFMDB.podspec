@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PFMDB"
-  s.version      = "1.0.4"
-  s.summary      = "An object-oriented storage framework of FMDB to save data like CoreData. Just like Hibernate of Java, It’s easy to use."
+  s.version      = "1.0.5"
+  s.summary      = "一个轻量级的将FMDB封装成面向对象存储框架，类似于JAVA的Hibernate"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-	一个轻量级的将FMDB封装成面向对象存储框架，类似于JAVA的Hibernate
+	An object-oriented storage framework of FMDB to save data like CoreData. Just like Hibernate of Java, It’s easy to use.
                    DESC
 
   s.homepage     = "https://github.com/hzw598/PFMDB"
