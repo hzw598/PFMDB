@@ -378,20 +378,8 @@
     if (sqls.count == 0) {
         return YES;
     }
-    __block BOOL flag = YES;
-    FMDatabaseQueue *queue = [[PFMDBManager shareInstance] defaultQueue];
-    [queue inTransaction:^(FMDatabase *db, BOOL *rollback) {
-        for (PFMDBSql *sql in sqls) {
-            flag = [self p_executeUpdateOne:sql];
-            if (!flag) {
-                NSLog(@"pfmdb更新数据表失败：%@ %@",sql.sql, sql.argvs);
-                *rollback = YES;
-                return;
-            }
-        }
-    }];
-    
-    return flag;
+    //批量更新
+    return [self p_executeUpdateBatch:sqls];
 }
 
 
